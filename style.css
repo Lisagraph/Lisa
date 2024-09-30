@@ -721,19 +721,9 @@ p{
 	text-align: center;
 	top: 12.5%;
 	margin: auto;
+	padding: auto;
 	width: 50%;
 	height: auto;
-}
-
-.infoBoxInner{
-	position: relative;
-	text-align: center;
-	padding: 10px auto !important;
-	height: 100%;
-	border-radius: 5px;
-	background: #fff;
-	font-size: 1.1em;
-	color: #2c6424;
 }
 /* BN banner end */
 
