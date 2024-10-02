@@ -121,7 +121,27 @@ p{
 }
 
 .titleMast{
-	margin-top: 15% !important;
+	margin-top: 12% !important;
+}
+
+.paraConMQ{
+	padding-top: 9% !important;
+}
+
+.titleCon1, .titleCon2, .titleCon3{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 60px;
+}
+
+.titleCon1, .titleCon3{
+	width: 20%;
+}
+
+.titleCon2{
+	width: 80%;
 }
 
 .shadowBox{
@@ -1145,7 +1165,7 @@ label{
     -webkit-backdrop-filter: blur(20px);
 }
 
-.FirstName, .Sirname, .Email, .Password, .Country{
+.FirstName, .surname, .Email, .Password, .Country{
 	text-align: left !important;
 	left: 0;
 	font-size: 13px;
@@ -1153,7 +1173,7 @@ label{
 	color: #fff;
 }
 
-.FirstNameSignUp, .SirnameSignUp, .EmailSignUp, .CountrySignUp{
+.FirstNameSignUp, .surnameSignUp, .EmailSignUp, .CountrySignUp{
 	text-align: left !important;
 	font-size: 13px;
 	padding: auto;
@@ -2306,6 +2326,7 @@ object:hover{
 	align-content: center;
 	margin: 50px 0 0 50px;
 	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+	pointer-events: none !important;
 }
 
 .MRECheadeGot, .MRECseceGot{
@@ -2577,92 +2598,6 @@ object:hover{
 }                
 /* eGotU banner end */
 
-/* number buttonBanner style */
-.buttonBanner > a{
-	display: inline-flex;
-	width: auto;
-	height: auto;
-	font-size: 1.2em;
-	padding: 1.2% .9%;
-	background: #fff;
-	text-decoration: none;
-	align-items: center;
-	justify-content: center;
-	border-radius: 20px;
-	color: #05004d;
-	position: relative;
-	z-index: 3;
-	margin: .6%;
-	width: fit-content;
-	display: grid;
-	float: left;
-}
-
-/* top is distance from the top that number button bounces when clicked */
-.buttonBanner > a:active{
-	top: 1px;
-	color: #6364ff;
-}
-
-/* background is colour of number button when clicked */
-.buttonBanner > a:focus{
-	background: #D8E5EE;
-}
-
-.buttonBanner:hover{
-	background: #6364ff;
-	color: #fff;
-	border-radius: 20px;
-}
-
-/* phoneBanner ani start */
-#phoneBanner{
-	animation-name: phoneBannerAni;
-	animation-duration: 40s;
-	animation-iteration-count: infinite;
-	/* none / forward / backward / both */
-	animation-fill-mode: forwards;
-}	
-  
-@keyframes phoneBannerAni{
-0%{ 
-  background: transparent;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-} 
-
-30%{ 
-  background: #34FBFF;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}      
-
-50%{ 
-  background: #f2ff9b;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}  
-
-65%{ 
-  background: #e19bff;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-} 
-
-80%{ 
-  background: #9bffc5;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-} 
-
-100%{ 
-  background: transparent;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}  
-}
-/* phoneBanner ani end */
-
 .phoneContact, .emailContact{
 	color: #05004d; 
 	background-color: #fff;  
@@ -2676,6 +2611,280 @@ object:hover{
 	background-color: #8bbee5;  
 	text-decoration: none !important;	
 }  
+
+/* BMB banner start */
+.mobMRECBMB{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	align-content: center;
+	margin: 50px 0 0 50px;
+	background: #0036d4;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+}
+
+.MRECheadBMB{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	float: left;
+	overflow: visible;
+	z-index: 3;
+}
+
+.MREChead1BMB, .MREChead2BMB, .MREChead3BMB{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	float: left;
+	z-index: 3;
+	overflow: visible;
+}
+
+.MREChead1BMB{
+	width: 10%;
+}
+
+.MREChead2BMB{
+	width: 80%;
+	overflow: visible;
+}
+
+.MREChead3BMB{
+	width: 10%;
+}
+
+.MRECctaBMB{
+	position: absolute;
+	width: 98px;
+	height: 98px;
+	align-content: center;
+	top: 12.5px;
+	left: 12.5px;
+	z-index: 3;
+}
+  
+  /* ribbonBMB start */
+  .ribbonBMB {
+	position: absolute;
+	left: -5px;
+	top: -5px;
+	z-index: 1;
+	overflow: hidden;
+	width: 75px;
+	height: 75px;
+	text-align: right;
+	z-index: 9999;
+  }
+  
+  .ribbonBMB span {
+	font-size: 10px;
+	font-weight: bold;
+	color: #0036D4;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 20px;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	width: 100px;
+	display: block;
+	background: linear-gradient(#ff0 0%, #ff0 50%, #dbb471 100%);
+	box-shadow: 0 3px 10px -5px #0036D4;
+	position: absolute;
+	top: 19px; left: -21px;
+  }
+  
+  .ribbonBMB span::before {
+	content: "";
+	position: absolute; left: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid #dbb471;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #dbb471;
+  }
+  .ribbonBMB span::after {
+	content: "";
+	position: absolute; right: 0px; top: 100%;
+	z-index: -1;
+	border-left: 3px solid transparent;
+	border-right: 3px solid #dbb471;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #dbb471;
+  }
+  /* ribbonBMB end */
+
+.MRECin1BMB, .MRECin2BMB, .MRECin3{
+	position: relative;
+	height: 260px;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.MRECin1BMB{
+	width: 10%;
+}
+
+.MRECin2BMB{
+	width: 80%;
+}
+
+.MRECin3BMB{
+	width: 10%;
+}
+
+.MRECRegConBMB{
+	text-decoration: none !important;
+	position: relative;
+	width: 100%;
+	top: -53px;
+	padding: 1% auto;
+	font-size: .75em;
+	justify-content: center;
+	display: flex;
+	left: 0;
+	float: left;
+	background: #58c2e2;
+	z-index: 9999 !important;
+}
+
+.MRECRegCon1BMB, .MRECRegCon2, .MRECRegCon3BMB{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: auto;
+}
+
+.MRECRegCon1BMB, .MRECRegCon3BMB{
+	width: 135px;
+}
+
+.MRECRegCon2BMB{
+	width: 180px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.MRECRegCon2BMB:hover h3{
+	color: #fff !important;
+}
+
+.MRECRegCon2BMB:hover{
+	background: #6364ff !important;
+	cursor: pointer;
+}
+
+/* waves start */
+.waveCon{
+	width: 100%;
+	height: 280px;
+	position: relative;
+	top: -70px;
+	left: 0;
+	overflow: hidden !important;
+	background: #0036d4;
+  }
+  
+  #waves{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 6vh;
+  }
+  
+  .waves > use {
+	animation: move-forever 32s -32s linear infinite;
+  }
+  
+  .waves > use:nth-child(2) {
+	animation-delay: -10s;
+	animation-duration: 20s;
+  }
+  .waves > use:nth-child(3) {
+	animation-delay: -20s;
+	animation-duration: 10s;
+  }
+  
+  @keyframes move-forever {
+	0% {
+	  transform: translate(-90px, 0%);
+	}
+	100% {
+	  transform: translate(85px, 0%);
+	}
+  }
+  /* waves end */
+
+.MRECfootBMB{
+	position: relative;
+	margin-top: -45px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	float: left;
+	background: #58c2e2;
+}
+
+.disParaBMB{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: left;
+	font-size: 8px;
+	color: #fff;
+}
+
+.disInnerBMB{
+	position: relative;
+	width: 425px;
+	height: 40px;
+	top: 5px;
+	left: 12.5px;
+	float: left;
+}
+
+.disLogoBMB{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+#CSFlinkBMB, #RWlinkBMB{
+	background-color: #0036d4;
+	text-decoration: none;
+	color: #58c2e2;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#CSFlinkBMB:hover, #RWlinkBMB:hover{
+	background-color: #05004d;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.bottomConBMB{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: #58c2e2;
+  }
+/* BMB banner end */
 
 /* footer style start */
 .navFooter{
@@ -2747,7 +2956,7 @@ object:hover{
 }
 
 .titleMast{
-	margin-top: 14vh !important;
+	margin-top: 20% !important;
 }
 
 #contentEmail{
@@ -2799,8 +3008,7 @@ object:hover{
 }
 
 .titleMast{
-	margin-top: 5% !important;
-	font-size: 2em !important;
+	margin-top: 10% !important;
 }
 
 .mastheadCon1{
@@ -2862,8 +3070,7 @@ object:hover{
 @media screen and (max-width: 1366px){
 
 .titleMast{
-   top: 7vh;
-   font-size: 1.8em !important;
+   margin-top: 8% !important;
 }
     
 .paraConMQ{
@@ -2957,7 +3164,7 @@ object:hover{
 	height: 6150px;
 }
 
-.mobMREC, .mobMRECeGot, .mobMRECBNbanner{
+.mobMREC, .mobMRECeGot, .mobMRECBNbanner, .mobMRECBMB{
 	margin: 50px 0 0 35px;
 }
 }
@@ -2998,7 +3205,6 @@ p{
 
 .titleMast{
 	top: 2.5vh;
-	font-size: 1.9em !important;
 }
     
 .paraConMQ{
@@ -3013,7 +3219,7 @@ p{
 	left: 56.5px !important;
 }
       
-.mobMREC, .mobMRECeGot, .mobMRECBNbanner{
+.mobMREC, .mobMRECeGot, .mobMRECBNbanner, .mobMRECBMB{
   	margin: 50px 0 0 50px;
 }
       
@@ -3074,13 +3280,13 @@ mastheadCon1{
 }
 
 .titleMast{
-	top: -1vh;
+	top: .09%;
 	width: 574px !important;
 	padding: 0 !important;
 }
 
 .paraConMQ{
-	padding-top: 0 !important;
+	margin-top: 15% !important;
 }
 
 .paraCon{
@@ -3133,7 +3339,7 @@ mastheadCon1{
 	left: 0 !important;/* change left position to keep it centered across mobile */
 }
 
-.mobMREC, .mobMRECeGot, .mobMRECBNbanner, .mobMRECphoneUs{
+.mobMREC, .mobMRECeGot, .mobMRECBNbanner, .mobMRECBMB{
 	margin: 50px 0 0 40px !important;
 }
 
