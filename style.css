@@ -134,6 +134,7 @@ p{
 	position: relative;
 	float: left;
 	height: 60px;
+	overflow: visible !important;
 }
 
 .titleCon1, .titleCon3{
@@ -142,7 +143,6 @@ p{
 
 .titleCon2{
 	width: 80%;
-	overflow: visible !important;
 }
 
 .shadowBox{
