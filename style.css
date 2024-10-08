@@ -142,6 +142,7 @@ p{
 
 .titleCon2{
 	width: 80%;
+	overflow: visible !important;
 }
 
 .shadowBox{
